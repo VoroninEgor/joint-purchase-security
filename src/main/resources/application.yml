@@ -1,0 +1,24 @@
+server:
+  port: 8082
+
+grpc:
+  server:
+    port: 9098
+
+spring:
+  application:
+    name: joint-purchase-security
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/joint-purchase
+    username: postgres
+    password: postgres
+
+jwt:
+  secret: youshallnotpassyoushallnotpassyoushallnotpassyoushallnotpassyoushallnotpassyoushallnotpassyoushallnotpassyoushallnotpass
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /docs/swagger-ui
